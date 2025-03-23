@@ -10,8 +10,8 @@ function initVodClient(accessKeyId,accessKeySecret) {
 }
 
 exports.getvod = async (req,res,next) => {
-    let client = initVodClient('LTAI5tN1ngkp4YtVSs9iz6KW',
-        '9CV3u4wTMbW7NhNdDV9aCh90O3kXlj')
+    let client = initVodClient('accessKeyId',
+        'accessKeySecret')
     let vodBack = await client.request('CreateUploadVideo', {
         Title: 'test',//视频的名字
         FileName: 'test.mp4'//视频本身的名字以及后缀
